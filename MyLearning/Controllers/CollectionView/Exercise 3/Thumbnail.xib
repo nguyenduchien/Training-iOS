@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Thumbnail" customModule="MyLearning" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="uA0-EF-emJ" id="Pqk-wT-ZVd"/>
+                <outlet property="imageView" destination="WSC-xI-4pm" id="ODx-vS-y1g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uA0-EF-emJ">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sP0-Hb-GO7">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fbl-Xh-I7f"/>
+                        <outlet property="delegate" destination="-1" id="gbS-Zb-LsG"/>
+                    </connections>
+                </collectionView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WSC-xI-4pm">
+                    <rect key="frame" x="51" y="40" width="273.5" height="273.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WSC-xI-4pm" secondAttribute="height" multiplier="1:1" id="Bs7-rd-AHL"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WSC-xI-4pm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="1SK-Bo-7ar"/>
+                <constraint firstAttribute="trailing" secondItem="uA0-EF-emJ" secondAttribute="trailing" id="4Jh-1k-0hW"/>
+                <constraint firstItem="uA0-EF-emJ" firstAttribute="top" secondItem="WSC-xI-4pm" secondAttribute="bottom" constant="20" id="A6Q-Od-ftU"/>
+                <constraint firstAttribute="bottom" secondItem="uA0-EF-emJ" secondAttribute="bottom" id="BHR-c5-ZKp"/>
+                <constraint firstItem="uA0-EF-emJ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/2" id="PKh-iB-P1P"/>
+                <constraint firstItem="uA0-EF-emJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="deu-LH-0uO"/>
+                <constraint firstItem="WSC-xI-4pm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h2h-Pa-RJD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

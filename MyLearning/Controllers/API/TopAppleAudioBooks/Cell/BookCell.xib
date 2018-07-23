@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="166" id="KGk-i7-Jjw" customClass="BookCell" customModule="MyLearning" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="587" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="587" height="165.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRi-yV-qN8">
+                        <rect key="frame" x="15" y="37" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PRi-yV-qN8" secondAttribute="height" multiplier="1:1" id="RWk-x9-2Ab"/>
+                            <constraint firstAttribute="width" constant="90" id="l8q-mH-pib"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="10" height="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lst-oF-KTD">
+                        <rect key="frame" x="120" y="40.5" width="31.5" height="15"/>
+                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA4-tH-X1H">
+                        <rect key="frame" x="120" y="60.5" width="28" height="13.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNu-iK-rsp">
+                        <rect key="frame" x="538" y="101.5" width="34" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hNu-iK-rsp" secondAttribute="trailing" constant="15" id="77e-oU-gwQ"/>
+                    <constraint firstItem="OA4-tH-X1H" firstAttribute="top" secondItem="Lst-oF-KTD" secondAttribute="bottom" constant="5" id="CBW-LG-BFA"/>
+                    <constraint firstItem="Lst-oF-KTD" firstAttribute="top" secondItem="PRi-yV-qN8" secondAttribute="top" multiplier="1.1" id="HW4-8k-Zih"/>
+                    <constraint firstItem="hNu-iK-rsp" firstAttribute="bottom" secondItem="PRi-yV-qN8" secondAttribute="bottom" constant="-10" id="J75-C4-sTV"/>
+                    <constraint firstItem="OA4-tH-X1H" firstAttribute="leading" secondItem="Lst-oF-KTD" secondAttribute="leading" id="Suj-i2-8P0"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="OA4-tH-X1H" secondAttribute="trailing" constant="10" id="Zpj-cA-hfg"/>
+                    <constraint firstItem="Lst-oF-KTD" firstAttribute="leading" secondItem="PRi-yV-qN8" secondAttribute="trailing" constant="15" id="eD4-nx-uiV"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lst-oF-KTD" secondAttribute="trailing" constant="10" id="gqX-Ob-6Pa"/>
+                    <constraint firstItem="PRi-yV-qN8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="m7l-C1-Bao"/>
+                    <constraint firstItem="PRi-yV-qN8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sRG-xK-yRB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistLbl" destination="OA4-tH-X1H" id="Dkm-ey-8Bo"/>
+                <outlet property="bookimageView" destination="PRi-yV-qN8" id="wul-vm-cOs"/>
+                <outlet property="nameBookLbl" destination="Lst-oF-KTD" id="6ob-MN-u52"/>
+                <outlet property="priceBookLbl" destination="hNu-iK-rsp" id="7ve-Zr-OW1"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="-44"/>
+        </tableViewCell>
+    </objects>
+</document>
